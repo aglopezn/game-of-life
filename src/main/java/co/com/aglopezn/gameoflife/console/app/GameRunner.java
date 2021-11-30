@@ -9,7 +9,7 @@ public class GameRunner implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
         System.out.println("Welcome to Game of Life!");
-        String filepath = "static/toad.txt";
+        String filepath = "static/initial.txt";
         Game game = Game.fromFile(filepath);
         System.out.println(game.start());
     }
